@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */; };
 		F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */; };
-		F3E2D0B029D9A25F00515BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AF29D9A25F00515BBB /* ViewController.swift */; };
 		F3E2D0B329D9A25F00515BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B129D9A25F00515BBB /* Main.storyboard */; };
 		F3E2D0B529D9A26200515BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B429D9A26200515BBB /* Assets.xcassets */; };
 		F3E2D0B829D9A26200515BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B629D9A26200515BBB /* LaunchScreen.storyboard */; };
 		F3E2D0C329D9A26200515BBB /* SwiftCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0C229D9A26200515BBB /* SwiftCalcTests.swift */; };
 		F3E2D0CD29D9A26200515BBB /* SwiftCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0CC29D9A26200515BBB /* SwiftCalcUITests.swift */; };
 		F3E2D0CF29D9A26200515BBB /* SwiftCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0CE29D9A26200515BBB /* SwiftCalcUITestsLaunchTests.swift */; };
+		F3E2D0DC29D9A36B00515BBB /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0DB29D9A36B00515BBB /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		F3E2D0A829D9A25F00515BBB /* SwiftCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3E2D0AF29D9A25F00515BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3E2D0B229D9A25F00515BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3E2D0B429D9A26200515BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E2D0B729D9A26200515BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		F3E2D0C829D9A26200515BBB /* SwiftCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2D0CC29D9A26200515BBB /* SwiftCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalcUITests.swift; sourceTree = "<group>"; };
 		F3E2D0CE29D9A26200515BBB /* SwiftCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3E2D0DB29D9A36B00515BBB /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */,
 				F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */,
-				F3E2D0AF29D9A25F00515BBB /* ViewController.swift */,
 				F3E2D0B129D9A25F00515BBB /* Main.storyboard */,
 				F3E2D0B429D9A26200515BBB /* Assets.xcassets */,
 				F3E2D0B629D9A26200515BBB /* LaunchScreen.storyboard */,
 				F3E2D0B929D9A26200515BBB /* Info.plist */,
+				F3E2D0DB29D9A36B00515BBB /* CalculatorViewController.swift */,
 			);
 			path = SwiftCalc;
 			sourceTree = "<group>";
@@ -258,8 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E2D0B029D9A25F00515BBB /* ViewController.swift in Sources */,
 				F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */,
+				F3E2D0DC29D9A36B00515BBB /* CalculatorViewController.swift in Sources */,
 				F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
