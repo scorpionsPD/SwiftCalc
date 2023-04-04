@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F337DCBB29D9F9E200953859 /* CalculationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCBA29D9F9E200953859 /* CalculationViewModal.swift */; };
+		F337DCC129D9FC3000953859 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCC029D9FC3000953859 /* Constants.swift */; };
 		F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */; };
 		F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */; };
 		F3E2D0B329D9A25F00515BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B129D9A25F00515BBB /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F337DCBA29D9F9E200953859 /* CalculationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewModal.swift; sourceTree = "<group>"; };
+		F337DCC029D9FC3000953859 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F3E2D0A829D9A25F00515BBB /* SwiftCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F337DCB929D9F9B900953859 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCBA29D9F9E200953859 /* CalculationViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		F337DCBF29D9FC3000953859 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCC029D9FC3000953859 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		F3E2D09F29D9A25F00515BBB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +119,8 @@
 		F3E2D0AA29D9A25F00515BBB /* SwiftCalc */ = {
 			isa = PBXGroup;
 			children = (
+				F337DCBF29D9FC3000953859 /* Constants */,
+				F337DCB929D9F9B900953859 /* ViewModal */,
 				F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */,
 				F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */,
 				F3E2D0B129D9A25F00515BBB /* Main.storyboard */,
@@ -258,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F337DCC129D9FC3000953859 /* Constants.swift in Sources */,
+				F337DCBB29D9F9E200953859 /* CalculationViewModal.swift in Sources */,
 				F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */,
 				F3E2D0DC29D9A36B00515BBB /* CalculatorViewController.swift in Sources */,
 				F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */,

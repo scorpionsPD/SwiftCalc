@@ -8,14 +8,57 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-
+    @IBOutlet weak var display: UILabel!
+    private var isTyping = false
+    private var vm = CalculationViewModal()
+    private var displayValue: Double {
+        get {
+            return Double(display.text ?? Constants.emptyString) ?? Double.nan
+        }
+        set {
+            display.text = String(newValue)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
+    // Action to perform on any digit press from 0-9
+    @IBAction func digitsPress(_ sender: UIButton) {
+        guard let digit = sender.currentTitle else { return }
+        if isTyping {
+            guard let text = display.text else { return }
+            
+            if digit == "." && (text.range(of: Constants.decimalPoint) != nil) {
+                return
+            } else {
+                let tmp = text + digit
+                display.text = tmp
+            }
+            
+        } else {
+            if digit == Constants.decimalPoint {
+                display.text = Constants.pointAfterZero
+            } else {
+                display.text = digit
+            }
+            isTyping = true
+        }
+    }
+    // Action to perform on any symbol press from includding sin and cos
+    @IBAction func symbolPress(_ sender: UIButton) {
+        if isTyping {
+            vm.setOperand(displayValue)
+            isTyping = false
+        }
+        if let action = sender.currentTitle {
+            vm.executeAction(action)
+        }
+        if let result = vm.result {
+            displayValue = result
+        }
+    }
     /*
     // MARK: - Navigation
 
