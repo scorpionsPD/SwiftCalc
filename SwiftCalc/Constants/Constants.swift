@@ -13,4 +13,8 @@ struct Constants {
     static let emptyString: String = ""
     static let maxStringLength: Int = 8
     static let pointAfterZero: String = "0."
+    
+    enum Backend {
+        static let url = "https://blockchain.info"
+    }
 }

@@ -16,7 +16,9 @@ class CalculatorViewController: UIViewController {
             return Double(display.text ?? Constants.emptyString) ?? Double.nan
         }
         set {
-            display.text = String(newValue)
+            DispatchQueue.main.async { [weak self] in
+                self?.display.text = String(newValue)
+            }
         }
     }
     override func viewDidLoad() {
@@ -55,8 +57,8 @@ class CalculatorViewController: UIViewController {
         if let action = sender.currentTitle {
             vm.executeAction(action)
         }
-        if let result = vm.result {
-            displayValue = result
+        vm.result = { value in
+            self.displayValue = value
         }
     }
     /*
