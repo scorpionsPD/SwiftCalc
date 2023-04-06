@@ -32,9 +32,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-xM-aQF">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="122.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-81-SNx">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-81-SNx" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="103" height="122.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <gestureRecognizers/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <state key="normal" title="sin">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,9 +44,10 @@
                                                             <action selector="symbolPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="011-lf-r5e"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-JL-KYi">
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-JL-KYi" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="104" y="0.0" width="102.5" height="122.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <gestureRecognizers/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <state key="normal" title="cos">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,7 +56,7 @@
                                                             <action selector="symbolPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b82-pv-P6J"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-2n-ryW">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-2n-ryW" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="207.5" y="0.0" width="103" height="122.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -114,7 +116,7 @@
                                                             <action selector="digitsPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87p-z2-h2e"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmK-dM-ONo">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmK-dM-ONo" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="311.5" y="0.0" width="102.5" height="122"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -163,7 +165,7 @@
                                                             <action selector="digitsPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yx9-ae-d60"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-Wz-sm7">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-Wz-sm7" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="311.5" y="0.0" width="102.5" height="122.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -212,7 +214,7 @@
                                                             <action selector="digitsPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9D-79-T60"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxx-cV-t9J">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxx-cV-t9J" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="311.5" y="0.0" width="102.5" height="122"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -261,7 +263,7 @@
                                                             <action selector="symbolPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OsO-1E-XLZ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-In-XYD">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-In-XYD" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="311.5" y="0.0" width="102.5" height="122.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -279,14 +281,29 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82A-O5-h3z">
+                                <rect key="frame" x="20" y="40" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="elg-u1-Rde"/>
+                                    <constraint firstAttribute="width" constant="50" id="s8g-7g-QrQ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.1019607931" green="0.1019607931" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.pencil" catalog="system"/>
+                                <connections>
+                                    <segue destination="g1I-7L-nUV" kind="presentation" id="fZv-Ca-G1U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sv0-rJ-5FI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MfL-oz-sPo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ea8-jJ-Abf"/>
+                            <constraint firstItem="82A-O5-h3z" firstAttribute="leading" secondItem="sv0-rJ-5FI" secondAttribute="leading" constant="20" id="VdL-Gy-J1d"/>
                             <constraint firstAttribute="bottom" secondItem="MfL-oz-sPo" secondAttribute="bottom" id="hBp-D4-aga"/>
                             <constraint firstItem="MfL-oz-sPo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iEZ-dc-WUJ"/>
                             <constraint firstAttribute="trailing" secondItem="MfL-oz-sPo" secondAttribute="trailing" id="kQb-y8-ArR"/>
+                            <constraint firstItem="82A-O5-h3z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="tKK-oQ-NcQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -297,8 +314,74 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="99.776785714285708"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="lVr-7L-JIa">
+            <objects>
+                <viewController id="g1I-7L-nUV" customClass="SettingsViewController" customModule="SwiftCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aQ5-Ms-dkL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFh-FU-C22">
+                                <rect key="frame" x="0.0" y="20" width="414" height="822"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsTableViewCell" id="BH8-lm-0Ga" customClass="SettingsTableViewCell" customModule="SwiftCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BH8-lm-0Ga" id="2JB-Vd-V7s">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wu-Ot-03W">
+                                                    <rect key="frame" x="20" y="11.5" width="55" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGp-7n-dOl">
+                                                    <rect key="frame" x="345" y="6.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="turnOnOffSwitch:" destination="BH8-lm-0Ga" eventType="valueChanged" id="wq4-3e-nuk"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9wu-Ot-03W" firstAttribute="leading" secondItem="2JB-Vd-V7s" secondAttribute="leadingMargin" id="FKg-fM-Ig6"/>
+                                                <constraint firstItem="9wu-Ot-03W" firstAttribute="centerY" secondItem="2JB-Vd-V7s" secondAttribute="centerY" id="Hy6-ZJ-crG"/>
+                                                <constraint firstItem="XGp-7n-dOl" firstAttribute="centerY" secondItem="2JB-Vd-V7s" secondAttribute="centerY" id="Tq3-y3-JkZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="XGp-7n-dOl" secondAttribute="trailing" constant="20" symbolic="YES" id="r4d-Tl-8hS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="symbolText" destination="9wu-Ot-03W" id="tTD-iI-2oS"/>
+                                            <outlet property="toggleSwitch" destination="XGp-7n-dOl" id="E4p-xb-4NM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="g1I-7L-nUV" id="8zA-zZ-ONq"/>
+                                    <outlet property="delegate" destination="g1I-7L-nUV" id="z47-4d-VwF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NVz-aw-7kT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZFh-FU-C22" firstAttribute="leading" secondItem="NVz-aw-7kT" secondAttribute="leading" id="3Qd-SG-1an"/>
+                            <constraint firstItem="NVz-aw-7kT" firstAttribute="bottom" secondItem="ZFh-FU-C22" secondAttribute="bottom" id="n5Q-Qz-i4w"/>
+                            <constraint firstItem="ZFh-FU-C22" firstAttribute="top" secondItem="aQ5-Ms-dkL" secondAttribute="top" constant="20" symbolic="YES" id="nm5-hg-Bbc"/>
+                            <constraint firstItem="ZFh-FU-C22" firstAttribute="trailing" secondItem="NVz-aw-7kT" secondAttribute="trailing" id="x0Y-UO-WuM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUA-C8-HtY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="377.67857142857139"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="square.and.pencil" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

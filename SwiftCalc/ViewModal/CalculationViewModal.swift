@@ -66,9 +66,9 @@ class CalculationViewModal {
             case .result:
                 performPendingAction()
             case .onlineAction(let function):
-                onlineTask.convertToUSD({ value in
-                    self.pendingAction = PendingAction(function: function, firstOperand: value)
-                    self.performPendingAction()
+                onlineTask.convertToUSD({ [weak self] value in
+                    self?.pendingAction = PendingAction(function: function, firstOperand: value)
+                    self?.performPendingAction()
                 })
             }
         }
