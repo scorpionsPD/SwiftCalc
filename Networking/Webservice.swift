@@ -10,10 +10,15 @@ enum NetworkError: Error {
     case parseJson
     case parseData
     case emptyResource
+    case reachability
 }
 enum Webservice {
     @discardableResult
     static func load<A>(resource: Resource<A>?, completion: @escaping (Result<A, Error>) -> Void) -> URLSessionTask? {
+        if !Reachability.isConnectedToNetwork() {
+            completion(.failure(NetworkError.reachability))
+            return nil
+        }
         guard let resource = resource else {
             completion(.failure(NetworkError.emptyResource))
             return nil

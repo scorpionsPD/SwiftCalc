@@ -20,6 +20,11 @@
 		F337DCEA29DDF90600953859 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCE929DDF90600953859 /* SettingsTableViewCell.swift */; };
 		F337DCEC29DDF98F00953859 /* SettingsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCEB29DDF98F00953859 /* SettingsViewModal.swift */; };
 		F337DCEE29DE026100953859 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCED29DE026100953859 /* Settings.swift */; };
+		F337DCF129E041DE00953859 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF029E041DE00953859 /* Extentions.swift */; };
+		F337DCF429E042DA00953859 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF329E042DA00953859 /* CustomAlert.swift */; };
+		F337DCF929E0431400953859 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF629E0431400953859 /* PMAlertAction.swift */; };
+		F337DCFA29E0431400953859 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF729E0431400953859 /* PMAlertController.swift */; };
+		F337DCFB29E0431400953859 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F337DCF829E0431400953859 /* PMAlertController.xib */; };
 		F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */; };
 		F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */; };
 		F3E2D0B329D9A25F00515BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B129D9A25F00515BBB /* Main.storyboard */; };
@@ -62,6 +67,11 @@
 		F337DCE929DDF90600953859 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		F337DCEB29DDF98F00953859 /* SettingsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModal.swift; sourceTree = "<group>"; };
 		F337DCED29DE026100953859 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F337DCF029E041DE00953859 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		F337DCF329E042DA00953859 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		F337DCF629E0431400953859 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
+		F337DCF729E0431400953859 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
+		F337DCF829E0431400953859 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
 		F3E2D0A829D9A25F00515BBB /* SwiftCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,10 +173,37 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
+		F337DCEF29E041BC00953859 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCF029E041DE00953859 /* Extentions.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		F337DCF229E042AE00953859 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCF329E042DA00953859 /* CustomAlert.swift */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		F337DCF529E0431400953859 /* AlertLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCF629E0431400953859 /* PMAlertAction.swift */,
+				F337DCF729E0431400953859 /* PMAlertController.swift */,
+				F337DCF829E0431400953859 /* PMAlertController.xib */,
+			);
+			path = AlertLibrary;
+			sourceTree = "<group>";
+		};
 		F3E2D09F29D9A25F00515BBB = {
 			isa = PBXGroup;
 			children = (
 				F3E2D0AA29D9A25F00515BBB /* SwiftCalc */,
+				F337DCF529E0431400953859 /* AlertLibrary */,
 				F337DCD629DD891A00953859 /* Networking */,
 				F3E2D0C129D9A26200515BBB /* SwiftCalcTests */,
 				F3E2D0CB29D9A26200515BBB /* SwiftCalcUITests */,
@@ -187,6 +224,8 @@
 		F3E2D0AA29D9A25F00515BBB /* SwiftCalc */ = {
 			isa = PBXGroup;
 			children = (
+				F337DCF229E042AE00953859 /* CustomAlert */,
+				F337DCEF29E041BC00953859 /* Extention */,
 				F337DCE329DDBA7000953859 /* Customization */,
 				F337DCE029DD961700953859 /* CustomButton */,
 				F337DCBF29D9FC3000953859 /* Constants */,
@@ -329,6 +368,7 @@
 				F3E2D0B829D9A26200515BBB /* LaunchScreen.storyboard in Resources */,
 				F3E2D0B529D9A26200515BBB /* Assets.xcassets in Resources */,
 				F3E2D0B329D9A25F00515BBB /* Main.storyboard in Resources */,
+				F337DCFB29E0431400953859 /* PMAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +395,16 @@
 			files = (
 				F337DCC129D9FC3000953859 /* Constants.swift in Sources */,
 				F337DCE529DDBA9600953859 /* Customization.swift in Sources */,
+				F337DCF929E0431400953859 /* PMAlertAction.swift in Sources */,
 				F337DCBB29D9F9E200953859 /* CalculationViewModal.swift in Sources */,
+				F337DCF429E042DA00953859 /* CustomAlert.swift in Sources */,
 				F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */,
 				F337DCEC29DDF98F00953859 /* SettingsViewModal.swift in Sources */,
 				F337DCEA29DDF90600953859 /* SettingsTableViewCell.swift in Sources */,
 				F337DCD529DD890100953859 /* OnlineTask.swift in Sources */,
 				F3E2D0DC29D9A36B00515BBB /* CalculatorViewController.swift in Sources */,
+				F337DCF129E041DE00953859 /* Extentions.swift in Sources */,
+				F337DCFA29E0431400953859 /* PMAlertController.swift in Sources */,
 				F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */,
 				F337DCDB29DD891A00953859 /* Reachability.swift in Sources */,
 				F337DCEE29DE026100953859 /* Settings.swift in Sources */,
