@@ -69,7 +69,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP0-Qc-zug">
                                                         <rect key="frame" x="311.5" y="0.0" width="102.5" height="122.5"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <state key="normal" title="AC">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -281,7 +281,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82A-O5-h3z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82A-O5-h3z" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                 <rect key="frame" x="20" y="40" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="elg-u1-Rde"/>
@@ -291,7 +291,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="square.and.pencil" catalog="system"/>
                                 <connections>
-                                    <segue destination="g1I-7L-nUV" kind="presentation" id="fZv-Ca-G1U"/>
+                                    <segue destination="g1I-7L-nUV" kind="presentation" id="ciX-Qc-ebU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -314,7 +314,7 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="99.776785714285708"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="lVr-7L-JIa">
             <objects>
                 <viewController id="g1I-7L-nUV" customClass="SettingsViewController" customModule="SwiftCalc" customModuleProvider="target" sceneMemberID="viewController">
@@ -377,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUA-C8-HtY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="377.67857142857139"/>
+            <point key="canvasLocation" x="1006" y="218"/>
         </scene>
     </scenes>
     <resources>

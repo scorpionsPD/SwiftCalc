@@ -22,10 +22,13 @@ final class CalcBtn: UIButton {
         setup()
     }
     private func setState(isActive:Bool) {
+        let currentTheme = ThemeOrganizer.currentTheme()
         self.isUserInteractionEnabled = isActive
-        self.backgroundColor = isActive ? .systemOrange : .lightGray
+        self.backgroundColor = isActive ? currentTheme.symbolsBackgroundColor : .lightGray
     }
     private func setup() {
-        setState(isActive: Customization.shared.checkForState(self.currentTitle!))
+        if let title = self.currentTitle {
+            setState(isActive: Customization.shared.checkForState(title))
+        } else { self.backgroundColor = .clear }
     }
 }

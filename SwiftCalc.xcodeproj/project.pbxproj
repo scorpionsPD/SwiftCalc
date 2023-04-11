@@ -25,6 +25,7 @@
 		F337DCF929E0431400953859 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF629E0431400953859 /* PMAlertAction.swift */; };
 		F337DCFA29E0431400953859 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF729E0431400953859 /* PMAlertController.swift */; };
 		F337DCFB29E0431400953859 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F337DCF829E0431400953859 /* PMAlertController.xib */; };
+		F38D538629E48AE000E19E8C /* ThemeOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D538529E48AE000E19E8C /* ThemeOrganizer.swift */; };
 		F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */; };
 		F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */; };
 		F3E2D0B329D9A25F00515BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B129D9A25F00515BBB /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		F337DCF629E0431400953859 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		F337DCF729E0431400953859 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		F337DCF829E0431400953859 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		F38D538529E48AE000E19E8C /* ThemeOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeOrganizer.swift; sourceTree = "<group>"; };
 		F3E2D0A829D9A25F00515BBB /* SwiftCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,14 @@
 			path = AlertLibrary;
 			sourceTree = "<group>";
 		};
+		F38D538729E48AE600E19E8C /* ThemeOrganizer */ = {
+			isa = PBXGroup;
+			children = (
+				F38D538529E48AE000E19E8C /* ThemeOrganizer.swift */,
+			);
+			path = ThemeOrganizer;
+			sourceTree = "<group>";
+		};
 		F3E2D09F29D9A25F00515BBB = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +250,7 @@
 				F3E2D0B929D9A26200515BBB /* Info.plist */,
 				F3E2D0DB29D9A36B00515BBB /* CalculatorViewController.swift */,
 				F337DCE629DDC5EC00953859 /* SettingsViewController.swift */,
+				F38D538729E48AE600E19E8C /* ThemeOrganizer */,
 			);
 			path = SwiftCalc;
 			sourceTree = "<group>";
@@ -407,6 +418,7 @@
 				F337DCFA29E0431400953859 /* PMAlertController.swift in Sources */,
 				F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */,
 				F337DCDB29DD891A00953859 /* Reachability.swift in Sources */,
+				F38D538629E48AE000E19E8C /* ThemeOrganizer.swift in Sources */,
 				F337DCEE29DE026100953859 /* Settings.swift in Sources */,
 				F337DCDA29DD891A00953859 /* Resource.swift in Sources */,
 				F337DCDF29DD898D00953859 /* USDModal.swift in Sources */,
