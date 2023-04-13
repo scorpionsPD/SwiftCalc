@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import Networking
+
 class CustomAlert {
     private func showNerworkErrorAlert() {
         let alertVC = PMAlertController(title: "You are offline", description: "Please connect to internet", image: UIImage(named: "sad_cloud.png"), style: .alert) //Image by icons8.com
