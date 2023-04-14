@@ -56,11 +56,11 @@ class CalculatorViewController: UIViewController {
             vm.setOperand(displayValue)
             isTyping = false
         }
-        if let action = sender.currentTitle {
-            vm.executeAction(action)
-        }
         vm.result = { value in
             self.displayValue = value
+        }
+        if let action = sender.currentTitle {
+            vm.executeAction(action)
         }
     }
     // MARK: - Navigation

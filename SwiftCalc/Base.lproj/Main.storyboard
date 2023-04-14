@@ -44,7 +44,7 @@
                                                             <action selector="symbolPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="011-lf-r5e"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-JL-KYi" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-JL-KYi" customClass="CalcBtn" customModule="SwiftCalc" customModuleProvider="target">
                                                         <rect key="frame" x="104" y="0.0" width="102.5" height="122.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <gestureRecognizers/>
@@ -314,12 +314,12 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="99.776785714285708"/>
         </scene>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="lVr-7L-JIa">
             <objects>
                 <viewController id="g1I-7L-nUV" customClass="SettingsViewController" customModule="SwiftCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQ5-Ms-dkL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFh-FU-C22">
