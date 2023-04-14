@@ -206,6 +206,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F38D539F29E9733200E19E8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCE029DD961700953859 /* CustomButton */,
+				F337DCF229E042AE00953859 /* CustomAlert */,
+				F337DCE829DDF8E500953859 /* CustomCell */,
+				F3E2D0DB29D9A36B00515BBB /* CalculatorViewController.swift */,
+				F337DCE629DDC5EC00953859 /* SettingsViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F3E2D09F29D9A25F00515BBB = {
 			isa = PBXGroup;
 			children = (
@@ -231,22 +243,18 @@
 		F3E2D0AA29D9A25F00515BBB /* SwiftCalc */ = {
 			isa = PBXGroup;
 			children = (
-				F337DCF229E042AE00953859 /* CustomAlert */,
 				F337DCEF29E041BC00953859 /* Extention */,
 				F337DCE329DDBA7000953859 /* Customization */,
-				F337DCE029DD961700953859 /* CustomButton */,
 				F337DCBF29D9FC3000953859 /* Constants */,
 				F337DCDD29DD898D00953859 /* Modal */,
 				F337DCB929D9F9B900953859 /* ViewModal */,
-				F337DCE829DDF8E500953859 /* CustomCell */,
+				F38D539F29E9733200E19E8C /* Views */,
 				F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */,
 				F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */,
 				F3E2D0B129D9A25F00515BBB /* Main.storyboard */,
 				F3E2D0B429D9A26200515BBB /* Assets.xcassets */,
 				F3E2D0B629D9A26200515BBB /* LaunchScreen.storyboard */,
 				F3E2D0B929D9A26200515BBB /* Info.plist */,
-				F3E2D0DB29D9A36B00515BBB /* CalculatorViewController.swift */,
-				F337DCE629DDC5EC00953859 /* SettingsViewController.swift */,
 				F38D538729E48AE600E19E8C /* ThemeOrganizer */,
 			);
 			path = SwiftCalc;
