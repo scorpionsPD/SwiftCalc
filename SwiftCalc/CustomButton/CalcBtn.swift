@@ -28,7 +28,7 @@ final class CalcBtn: UIButton {
     }
     private func setup() {
         if let title = self.currentTitle {
-            setState(isActive: Customization.shared.checkForState(title))
+            setState(isActive: Customization().checkForState(title))
         } else { self.backgroundColor = .clear }
     }
 }

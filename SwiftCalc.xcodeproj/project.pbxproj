@@ -22,6 +22,7 @@
 		F337DCF929E0431400953859 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF629E0431400953859 /* PMAlertAction.swift */; };
 		F337DCFA29E0431400953859 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337DCF729E0431400953859 /* PMAlertController.swift */; };
 		F337DCFB29E0431400953859 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F337DCF829E0431400953859 /* PMAlertController.xib */; };
+		F368BB1629EFEFD500D42A0B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368BB1529EFEFD500D42A0B /* Utils.swift */; };
 		F38D538629E48AE000E19E8C /* ThemeOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D538529E48AE000E19E8C /* ThemeOrganizer.swift */; };
 		F38D538B29E5C72400E19E8C /* CalculationVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D538A29E5C72400E19E8C /* CalculationVMTests.swift */; };
 		F38D539E29E8760400E19E8C /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = F38D539D29E8760400E19E8C /* Networking */; };
@@ -69,6 +70,7 @@
 		F337DCF629E0431400953859 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		F337DCF729E0431400953859 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		F337DCF829E0431400953859 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		F368BB1529EFEFD500D42A0B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F38D538529E48AE000E19E8C /* ThemeOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeOrganizer.swift; sourceTree = "<group>"; };
 		F38D538A29E5C72400E19E8C /* CalculationVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationVMTests.swift; sourceTree = "<group>"; };
 		F3E2D0A829D9A25F00515BBB /* SwiftCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,14 @@
 			path = AlertLibrary;
 			sourceTree = "<group>";
 		};
+		F368BB1429EFEFD500D42A0B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F368BB1529EFEFD500D42A0B /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F38D538729E48AE600E19E8C /* ThemeOrganizer */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +251,7 @@
 		F3E2D0AA29D9A25F00515BBB /* SwiftCalc */ = {
 			isa = PBXGroup;
 			children = (
+				F368BB1429EFEFD500D42A0B /* Utils */,
 				F337DCEF29E041BC00953859 /* Extention */,
 				F337DCE329DDBA7000953859 /* Customization */,
 				F337DCBF29D9FC3000953859 /* Constants */,
@@ -431,6 +442,7 @@
 				F337DCEE29DE026100953859 /* Settings.swift in Sources */,
 				F337DCDF29DD898D00953859 /* USDModal.swift in Sources */,
 				F337DCE729DDC5ED00953859 /* SettingsViewController.swift in Sources */,
+				F368BB1629EFEFD500D42A0B /* Utils.swift in Sources */,
 				F337DCE229DD963500953859 /* CalcBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

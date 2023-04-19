@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Settings {
+class Settings: Codable {
     var symbol: String /// operator
     var isActive: Bool /// enable/disable status
     init(symbol: String, active: Bool) {

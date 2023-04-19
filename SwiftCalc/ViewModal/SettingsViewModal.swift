@@ -8,9 +8,10 @@
 import Foundation
 
 struct SettingsViewModal {
+    private var customize = Customization()
     var symbolsArray: [Settings] {
         get {
-            Customization.shared.actions.map{ Settings(symbol: $0.key, active: $0.value)}
+           return customize.actions
         }
     }
     var delegate: SettingsDelegate?
@@ -21,8 +22,8 @@ struct SettingsViewModal {
      symbol: operator
      value: enable/disable
      */
-    func updateSymbols(symbol:String, value: Bool) {
-        Customization.shared.updateState(symbol: symbol, value: value, didUpdate: {
+    mutating func updateSymbols(symbol:String, value: Bool) {
+        customize.updateState(symbol: symbol, value: value, didUpdate: {
             if let delegate = self.delegate {
                 delegate.didUpdate()
             }

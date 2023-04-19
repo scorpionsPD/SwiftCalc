@@ -14,6 +14,7 @@ struct Constants {
     static let maxStringLength: Int = 8
     static let pointAfterZero: String = "0."
     static let themeKey = "ThemeKey"
+    static let KeyForUserDefaults = "symbols"
     
     enum Backend {
         static let url = "https://blockchain.info"
