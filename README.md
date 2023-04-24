@@ -20,3 +20,5 @@ sin(90) = 1
 cos
 cos (degrees)
 cos(360) = 1
+
+# No persistence storage as of now, maintain state by singleton class. 
