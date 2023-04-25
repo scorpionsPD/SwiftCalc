@@ -22,7 +22,9 @@ struct OnlineTask {
         Webservice.load(resource: listResource) { result in
             switch result {
             case .failure(let error):
-                CustomAlert().showErrorAlert(error: error as! NetworkError)
+                if let error = error as? NetworkError {
+                    CustomAlert().showErrorAlert(error: error)
+                }
                 break
             case .success(let result):
                 onSuccess(result["USD"]?.last ?? 0.0)

@@ -52,6 +52,7 @@ class CalculationViewModal {
             switch action {
             case .constant(let value):
                 acquirer = value
+                pendingAction = nil
             case .individualAction(let function):
                 if acquirer != nil {
                     acquirer = function(acquirer!)
