@@ -257,6 +257,7 @@
 				F337DCBF29D9FC3000953859 /* Constants */,
 				F337DCDD29DD898D00953859 /* Modal */,
 				F337DCB929D9F9B900953859 /* ViewModal */,
+				F38D538729E48AE600E19E8C /* ThemeOrganizer */,
 				F38D539F29E9733200E19E8C /* Views */,
 				F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */,
 				F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */,
@@ -264,7 +265,6 @@
 				F3E2D0B429D9A26200515BBB /* Assets.xcassets */,
 				F3E2D0B629D9A26200515BBB /* LaunchScreen.storyboard */,
 				F3E2D0B929D9A26200515BBB /* Info.plist */,
-				F38D538729E48AE600E19E8C /* ThemeOrganizer */,
 			);
 			path = SwiftCalc;
 			sourceTree = "<group>";

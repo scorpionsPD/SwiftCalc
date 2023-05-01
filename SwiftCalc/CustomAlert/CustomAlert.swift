@@ -22,6 +22,12 @@ class CustomAlert {
         }))
         UIApplication.topViewController()?.present(alertVC, animated: true, completion: nil)
     }
+    private func showDefaultErrorAlert(with message: String) {
+        let alertVC = PMAlertController(title: "Bad URL", description: message, image: UIImage(named: "sad_cloud.png"), style: .alert) //Image by icons8.com
+        alertVC.addAction(PMAlertAction(title: "oh! sorry", style: .cancel, action: { () -> Void in
+        }))
+        UIApplication.topViewController()?.present(alertVC, animated: true, completion: nil)
+    }
     func showErrorAlert(error: NetworkError) {
         switch error {
         case .parseUrl:
@@ -35,6 +41,11 @@ class CustomAlert {
             break
         case .reachability:
             showNerworkErrorAlert()
+            break
+        case .defaultError:
+            DispatchQueue.main.async {
+                self.showDefaultErrorAlert(with: error.localizedDescription)
+            }
             break
         }
     }

@@ -6,13 +6,10 @@
 //
 
 import UIKit
-protocol UpdateStateDelegate {
-    func didUpdateState(forSymbol symbol:String, isActive: Bool)
-}
 class SettingsTableViewCell: UITableViewCell {
     @IBOutlet weak var toggleSwitch: UISwitch!
     @IBOutlet weak var symbolText: UILabel!
-    var delegate:UpdateStateDelegate?
+    var toggledHandler: ((String,Bool) -> ())?
     var cellData:Settings? {
         didSet {
             guard let data = cellData else { return }
@@ -28,7 +25,9 @@ class SettingsTableViewCell: UITableViewCell {
      operators enable/disable switch
      */
     @IBAction func turnOnOffSwitch(_ sender: UISwitch) {
-        self.delegate?.didUpdateState(forSymbol: symbolText.text!, isActive: sender.isOn)
+        if let toggled = toggledHandler {
+            toggled(self.symbolText.text!,self.toggleSwitch.isOn)
+        }
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

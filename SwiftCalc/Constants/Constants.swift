@@ -17,6 +17,6 @@ struct Constants {
     static let KeyForUserDefaults = "symbols"
     
     enum Backend {
-        static let url = "https://blockchain.info"
+        static let url = "https://blockchain.infonn"
     }
 }

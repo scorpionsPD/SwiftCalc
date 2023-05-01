@@ -29,20 +29,16 @@ extension SettingsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SettingsTableViewCell.self), for: indexPath) as! SettingsTableViewCell
         let cellData = vm.symbolsArray[indexPath.row]
         cell.cellData = cellData
-        cell.delegate = self
+        cell.toggledHandler =  { [weak self] (symbol,isActive) in
+                guard let self = self else { return }
+            self.vm.updateSymbols(symbol: symbol, value: isActive)   /*
+                                                                     Called to update any operator
+                                                                     Parameters:
+                                                                     symbol: operator
+                                                                     isActive: enable/disable
+                                                                     */
+            self.dismiss(animated: true, completion: nil)
+        }
         return cell
-    }
-}
-
-extension SettingsViewController: UpdateStateDelegate {
-    /*
-     Called on update of any operator
-     Parameters:
-     symbol: operator
-     isActive: enable/disable
-     */
-    func didUpdateState(forSymbol symbol: String, isActive: Bool) {
-        vm.updateSymbols(symbol: symbol, value: isActive)
-        self.dismiss(animated: true, completion: nil)
     }
 }
