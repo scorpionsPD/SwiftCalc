@@ -10,43 +10,12 @@ import UIKit
 import Networking
 
 class CustomAlert {
-    private func showNerworkErrorAlert() {
-        let alertVC = PMAlertController(title: "You are offline", description: "Please connect to internet", image: UIImage(named: "sad_cloud.png"), style: .alert) //Image by icons8.com
-        alertVC.addAction(PMAlertAction(title: "oh! sorry", style: .cancel, action: { () -> Void in
-        }))
-        UIApplication.topViewController()?.present(alertVC, animated: true, completion: nil)
-    }
-    private func showParseUrlErrorAlert() {
-        let alertVC = PMAlertController(title: "Bad URL", description: "Please check", image: UIImage(named: "sad_cloud.png"), style: .alert) //Image by icons8.com
-        alertVC.addAction(PMAlertAction(title: "oh! sorry", style: .cancel, action: { () -> Void in
-        }))
-        UIApplication.topViewController()?.present(alertVC, animated: true, completion: nil)
-    }
-    private func showDefaultErrorAlert(with message: String) {
-        let alertVC = PMAlertController(title: "Bad URL", description: message, image: UIImage(named: "sad_cloud.png"), style: .alert) //Image by icons8.com
-        alertVC.addAction(PMAlertAction(title: "oh! sorry", style: .cancel, action: { () -> Void in
-        }))
-        UIApplication.topViewController()?.present(alertVC, animated: true, completion: nil)
-    }
-    func showErrorAlert(error: NetworkError) {
-        switch error {
-        case .parseUrl:
-            showParseUrlErrorAlert()
-            break
-        case .parseJson:
-            break
-        case .parseData:
-            break
-        case .emptyResource:
-            break
-        case .reachability:
-            showNerworkErrorAlert()
-            break
-        case .defaultError:
-            DispatchQueue.main.async {
-                self.showDefaultErrorAlert(with: error.localizedDescription)
-            }
-            break
+    func showErrorAlert(with message: String) {
+        DispatchQueue.main.async {
+            let alertVC = PMAlertController(title: "Error", description: message, image: UIImage(named: "sad_cloud.png"), style: .alert) //Image by icons8.com
+            alertVC.addAction(PMAlertAction(title: "oh! sorry", style: .cancel, action: { () -> Void in
+            }))
+            UIApplication.topViewController()?.present(alertVC, animated: true, completion: nil)
         }
     }
 }

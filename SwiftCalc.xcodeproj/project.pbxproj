@@ -25,7 +25,7 @@
 		F368BB1629EFEFD500D42A0B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368BB1529EFEFD500D42A0B /* Utils.swift */; };
 		F38D538629E48AE000E19E8C /* ThemeOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D538529E48AE000E19E8C /* ThemeOrganizer.swift */; };
 		F38D538B29E5C72400E19E8C /* CalculationVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D538A29E5C72400E19E8C /* CalculationVMTests.swift */; };
-		F38D539E29E8760400E19E8C /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = F38D539D29E8760400E19E8C /* Networking */; };
+		F3AD5E3B2A1F69B000A693C6 /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = F3AD5E3A2A1F69B000A693C6 /* NetworkManager */; };
 		F3E2D0AC29D9A25F00515BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AB29D9A25F00515BBB /* AppDelegate.swift */; };
 		F3E2D0AE29D9A25F00515BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2D0AD29D9A25F00515BBB /* SceneDelegate.swift */; };
 		F3E2D0B329D9A25F00515BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2D0B129D9A25F00515BBB /* Main.storyboard */; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F38D539E29E8760400E19E8C /* Networking in Frameworks */,
+				F3AD5E3B2A1F69B000A693C6 /* NetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +304,7 @@
 			);
 			name = SwiftCalc;
 			packageProductDependencies = (
-				F38D539D29E8760400E19E8C /* Networking */,
+				F3AD5E3A2A1F69B000A693C6 /* NetworkManager */,
 			);
 			productName = SwiftCalc;
 			productReference = F3E2D0A829D9A25F00515BBB /* SwiftCalc.app */;
@@ -379,7 +379,7 @@
 			);
 			mainGroup = F3E2D09F29D9A25F00515BBB;
 			packageReferences = (
-				F38D539C29E8760400E19E8C /* XCRemoteSwiftPackageReference "Networking" */,
+				F3AD5E392A1F69B000A693C6 /* XCRemoteSwiftPackageReference "NetworkManager" */,
 			);
 			productRefGroup = F3E2D0A929D9A25F00515BBB /* Products */;
 			projectDirPath = "";
@@ -788,9 +788,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F38D539C29E8760400E19E8C /* XCRemoteSwiftPackageReference "Networking" */ = {
+		F3AD5E392A1F69B000A693C6 /* XCRemoteSwiftPackageReference "NetworkManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scorpionsPD/Networking";
+			repositoryURL = "https://github.com/scorpionsPD/NetworkManager";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -799,10 +799,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F38D539D29E8760400E19E8C /* Networking */ = {
+		F3AD5E3A2A1F69B000A693C6 /* NetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F38D539C29E8760400E19E8C /* XCRemoteSwiftPackageReference "Networking" */;
-			productName = Networking;
+			package = F3AD5E392A1F69B000A693C6 /* XCRemoteSwiftPackageReference "NetworkManager" */;
+			productName = NetworkManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
